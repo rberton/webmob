@@ -45,8 +45,6 @@
     
     k64.geoloc = {};
     
-    k64.geoloc.position = {};
-    
     k64.geoloc.init = function()
     {
         k64.geoloc.update();
