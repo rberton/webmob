@@ -1,0 +1,152 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "main",
+        "designer|initialView": true
+    },
+    "designerId": "f03da9ac-b847-4994-9136-3d01fe614884",
+    "cn": [
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "accueil",
+                "iconCls": "home",
+                "html": "<h1>Accueil</h1>",
+                "styleHtmlContent": true
+            },
+            "designerId": "67716dcd-bc00-4c67-82f7-37c9aaa236ea"
+        },
+        {
+            "type": "Ext.carousel.Carousel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "carousel",
+                "iconCls": "reply",
+                "html": "",
+                "styleHtmlContent": true
+            },
+            "designerId": "9fc89bf7-8a6d-46c8-93d8-e65f6c9c9c23",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "contentEl": null,
+                        "html": "Première fiche",
+                        "styleHtmlContent": true,
+                        "designer|displayName": "Première fiche"
+                    },
+                    "designerId": "ad4f55f6-c180-4cbc-8e15-4e20f89cfddf"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "Seconde fiche",
+                        "styleHtmlContent": true,
+                        "designer|displayName": "Seconde fiche"
+                    },
+                    "designerId": "3bb86479-e3f2-4898-b555-ede54fa43c2a"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "Troisième fiche",
+                        "styleHtmlContent": true,
+                        "designer|displayName": "Troisième fiche"
+                    },
+                    "designerId": "732051a4-820e-435f-9f5a-db04fdcde234"
+                }
+            ]
+        },
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "liste",
+                "iconCls": "user",
+                "html": "",
+                "id": "listevue",
+                "itemId": "listevue",
+                "styleHtmlContent": true,
+                "store": "bdStore"
+            },
+            "designerId": "aee2ae9c-bf47-452b-8ddf-e8691c6c39c6",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "<b>{id}</b> {auteur} - {nom}"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "115bc301-86dd-409a-b638-41e98319eb49"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Map",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "carte",
+                "iconCls": "maps",
+                "html": "",
+                "styleHtmlContent": true
+            },
+            "designerId": "ce47eca4-3e54-4a9e-9726-078ecce83213"
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "designerId": "6f3a1ca7-3437-4a1e-aa03-2bd9e42426a2"
+        }
+    ]
+}

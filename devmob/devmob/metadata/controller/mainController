@@ -1,0 +1,105 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "bd"
+        ],
+        "stores": [
+            "bdStore"
+        ],
+        "designer|userClassName": "mainController"
+    },
+    "designerId": "5f90311e-799d-4c37-a424-04f4f1b54871",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "console.log('Lancement du controller');"
+                ]
+            },
+            "designerId": "1a96e6bf-d3a9-4544-98ea-fd8787557026"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "console.log(\"Lancement de l'application\");\r",
+                    "console.log(this.getListe());"
+                ]
+            },
+            "designerId": "3cf821f4-5924-4e9f-a824-76945ff0d7c4"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "liste",
+                "selector": "#listevue"
+            },
+            "designerId": "d8a0f306-407b-4c12-bbb4-9b68745f2a4d"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "afficheListe",
+                "designer|params": [
+                    "liste"
+                ],
+                "implHandler": [
+                    ""
+                ]
+            },
+            "designerId": "1505ce8b-3408-4001-87f6-d00681d93bc4"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "console.log('click list item');\r",
+                    "console.log(record.getData());\r",
+                    "console.log(dataview);"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "#listevue"
+            },
+            "designerId": "4904f24a-93f3-4805-99b6-b636f9f8cd8f"
+        }
+    ]
+}

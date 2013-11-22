@@ -1,0 +1,50 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "    {\r",
+            "        'id':1,\r",
+            "        'nom':'Lucky Luke',\r",
+            "        'auteur':'Gosciny'\r",
+            "    },\r",
+            "    {\r",
+            "        'id':2,\r",
+            "        'nom':'Asterix',\r",
+            "        'auteur':'Hergé'\r",
+            "    }\r",
+            "]"
+        ],
+        "model": "bd",
+        "storeId": "bdStore",
+        "designer|userClassName": "bdStore"
+    },
+    "designerId": "ceefb08a-97dc-4bb4-9cd4-ce30022f3998",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "2b4b2406-7f4d-4d6b-a446-c4619410a69c",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "e281448e-1b85-4c94-b5a1-9f090f850d44"
+                }
+            ]
+        }
+    ]
+}

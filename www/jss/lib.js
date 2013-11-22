@@ -136,6 +136,32 @@
         return this;
     };
     
+    k64.chargeListeBD = function()
+    {
+        console.log('chargeListeBD');
+        $.ajax({
+            url     : '../jss/bd.json',
+            success : function(result)
+            {
+                console.log(result);
+                if(result && result.success) {
+                    htmlfrag = $($('.bdrow')[0]);
+                    tbody = htmlfrag.parent();
+                    $(result.data).each(function(i,item) {
+                        var html = htmlfrag.clone();
+                        $('.bdrow-titre', html).text(item.nom);
+                        $('.bdrow-auteur', html).text(item.illustrateur);
+                        tbody.append(html);
+                    });
+                    htmlfrag.remove();
+                }
+                else {
+                    console.log('Erreur de reponse serveur');
+                }
+            }
+        });
+    };
+    
     window.onload = function()
     {
         if(document.getElementById('indic')) {
@@ -164,6 +190,10 @@
             {
                 $('footer a').removeClass('ui-btn-active');
                 $('footer a[href=' + this.href.substring(this.href.lastIndexOf('/') + 1) + ']').addClass('ui-btn-active');
+            });
+            $('a[href=#legal]').click(function(e)
+            {
+                k64.chargeListeBD();
             });
         }
     };

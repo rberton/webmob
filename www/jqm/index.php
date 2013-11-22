@@ -95,7 +95,20 @@
         <div id="legal" data-role="page" data-add-back-btn="true">
             <div data-role="header"></div>
             <div data-role="content">
-                <p>contenu de la page legal</p>
+                <table class="choopi" summary="Support pour l'exemple en Ajax" cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>illustrateur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bdrow">
+                            <td class="bdrow-titre"></td>
+                            <td class="bdrow-auteur"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div data-role="footer">
 <?php include '../footer.php'; ?>
